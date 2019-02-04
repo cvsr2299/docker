@@ -1,0 +1,15 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: myclaim-1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
+      
+      
+kubectl create -f ~/examples/persistent-volumes/claims/claim-01.yaml
+persistentvolumeclaim "myclaim-1" created
+

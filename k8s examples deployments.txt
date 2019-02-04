@@ -1,0 +1,21 @@
+# kubectl create -f db-service.yaml
+services/db-service
+# kubectl create -f db-rc.yaml
+replicationcontrollers/db-controller
+# kubectl create -f webserver-service.yaml
+services/webserver-service
+# kubectl create -f webserver-rc.yaml
+replicationcontrollers/webserver-controller
+
+
+
+$ kubectl create -f ~/examples/persistent-volumes/simpletest/pod.yaml
+
+$ kubectl describe pods mypod | less
+Name:           mypod
+Namespace:      default
+Node:           127.0.0.1/127.0.0.1
+Start Time:     Tue, 16 Aug 2016 09:42:03 -0400
+Labels:         name=frontendhttp
+Status:         Running
+IP:             172.17.0.2
